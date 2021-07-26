@@ -2,6 +2,54 @@ $(document).ready(function () {
 	//venobox effect
 	$(".venobox").venobox();
 
+	//counter up area
+	$(".counter").counterUp({
+		delay: 10,
+		time: 2000,
+	});
+
+	//window scrolling
+	$(window).scroll(function () {
+		var scrolling = $(this).scrollTop();
+
+		//back to top show & hide
+		if (scrolling > 50) {
+			$(".back-to-top").fadeIn();
+		} else {
+			$(".back-to-top").fadeOut();
+		}
+
+		//nav fix
+		if (scrolling > 50) {
+			$(".header-bg").addClass("nav-fix");
+		} else {
+			$(".header-bg").removeClass("nav-fix");
+		}
+		//nav fix
+		if (scrolling > 50) {
+			$(".header-bg").add("nav-fix ul li a::after");
+		} else {
+			$(".header-bg").remove("nav-fix ul li a::after");
+		}
+
+		//logo fix
+		if (scrolling > 50) {
+			$(".logo").addClass("logo-fix img");
+		} else {
+			$(".logo").removeClass("logo-fix img");
+		}
+	});
+
+	//back to top function
+	$(".back-to-top").click(function () {
+		$("html, body").animate(
+			{
+				scrollTop: 0,
+			},
+			1500
+		);
+	});
+
 	//banner slider
 	$(".image-slider").slick({
 		autoplay: true,
@@ -80,53 +128,5 @@ $(document).ready(function () {
 		centerMode: true,
 		centerPadding: "0",
 		autoplay: true,
-	});
-
-	//counter up area
-	$(".counter").counterUp({
-		delay: 10,
-		time: 2000,
-	});
-
-	//window scrolling
-	$(window).scroll(function () {
-		var scrolling = $(this).scrollTop();
-
-		//back to top show & hide
-		if (scrolling > 50) {
-			$(".back-to-top").fadeIn();
-		} else {
-			$(".back-to-top").fadeOut();
-		}
-
-		//nav fix
-		if (scrolling > 50) {
-			$(".header-bg").addClass("nav-fix");
-		} else {
-			$(".header-bg").removeClass("nav-fix");
-		}
-		//nav fix
-		if (scrolling > 50) {
-			$(".header-bg").add("nav-fix ul li a::after");
-		} else {
-			$(".header-bg").remove("nav-fix ul li a::after");
-		}
-
-		//logo fix
-		if (scrolling > 50) {
-			$(".logo").addClass("logo-fix img");
-		} else {
-			$(".logo").removeClass("logo-fix img");
-		}
-	});
-
-	//back to top function
-	$(".back-to-top").click(function () {
-		$("html, body").animate(
-			{
-				scrollTop: 0,
-			},
-			1500
-		);
 	});
 });
