@@ -117,19 +117,11 @@ img {
 	color: var(--cc2);
 	transition: all linear 0.4s;
 }
+.header-bg .header .menu-list ul li.active a::after {
+	opacity: 1;
+}
 .header-bg .header .menu-list ul li.active:hover a {
 	color: var(--cc1);
-}
-.header-bg .header .menu-list ul li.active a::after {
-	content: "";
-	width: 70%;
-	height: 3px;
-	background: var(--cc2);
-	position: absolute;
-	bottom: -48px;
-	left: 12px;
-	display: inline-block;
-	opacity: 1;
 }
 .header-bg .header .menu-list ul li a {
 	font-family: var(--hf);
@@ -156,17 +148,11 @@ img {
 	opacity: 0;
 	transition: all linear 0.4s;
 }
-.nav-fix ul li a::after {
-	content: "";
-	width: 70%;
-	height: 3px;
-	background: var(--cc2);
-	position: absolute;
-	bottom: 0;
-	left: 15px;
-	display: inline-block;
-	opacity: 0;
-	transition: all linear 0.4s;
+.nav-fix .header .menu-list ul li.active a::after {
+	bottom: -22px;
+}
+.nav-fix .header .menu-list ul li a::after {
+	bottom: -22px;
 }
 .header-bg .header .menu-list ul li:hover a::after {
 	opacity: 1;
