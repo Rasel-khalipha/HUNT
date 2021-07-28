@@ -79,6 +79,12 @@ $(document).ready(function () {
 		autoplay: true,
 	});
 
+	//counter up area
+	$(".counter").counterUp({
+		delay: 10,
+		time: 2000,
+	});
+
 	//window scrolling
 	$(window).scroll(function () {
 		var scrolling = $(this).scrollTop();
@@ -122,10 +128,4 @@ $(document).ready(function () {
 	});
 	//venobox effect
 	$(".venobox").venobox();
-
-	//counter up area
-	$(".counter").counterUp({
-		delay: 10,
-		time: 2000,
-	});
 });
