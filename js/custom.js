@@ -1,13 +1,4 @@
 $(document).ready(function () {
-	//venobox effect
-	$(".venobox").venobox();
-
-	//counter up area
-	$(".counter").counterUp({
-		delay: 10,
-		time: 2000,
-	});
-
 	//banner slider
 	$(".image-slider").slick({
 		autoplay: true,
@@ -128,5 +119,13 @@ $(document).ready(function () {
 			},
 			1500
 		);
+	});
+	//venobox effect
+	$(".venobox").venobox();
+
+	//counter up area
+	$(".counter").counterUp({
+		delay: 10,
+		time: 2000,
 	});
 });
