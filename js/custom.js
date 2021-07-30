@@ -1,4 +1,10 @@
 $(document).ready(function () {
+	//counter up area
+	$(".counter").counterUp({
+		delay: 20,
+		time: 2000,
+	});
+
 	//banner slider
 	$(".image-slider").slick({
 		autoplay: true,
@@ -60,12 +66,6 @@ $(document).ready(function () {
 		speed: 0.5,
 		autoplay: true,
 		cssEase: "linear",
-	});
-
-	//counter up area
-	$(".counter").counterUp({
-		delay: 20,
-		time: 2000,
 	});
 
 	//team slider area
