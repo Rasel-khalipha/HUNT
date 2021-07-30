@@ -62,6 +62,12 @@ $(document).ready(function () {
 		cssEase: "linear",
 	});
 
+	//counter up area
+	$(".counter").counterUp({
+		delay: 20,
+		time: 2000,
+	});
+
 	//team slider area
 	$(".team-slide").slick({
 		slidesToShow: 4,
@@ -122,10 +128,4 @@ $(document).ready(function () {
 	});
 	//venobox effect
 	$(".venobox").venobox();
-
-	//counter up area
-	$(".counter").counterUp({
-		delay: 10,
-		time: 2000,
-	});
 });
