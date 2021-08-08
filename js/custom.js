@@ -1,10 +1,4 @@
 $(document).ready(function () {
-	//counter up area
-	$(".counter").counterUp({
-		delay: 20,
-		time: 2000,
-	});
-
 	//banner slider
 	$(".image-slider").slick({
 		autoplay: true,
@@ -85,6 +79,12 @@ $(document).ready(function () {
 		autoplay: true,
 	});
 
+	//counter up area
+	$(".counter").counterUp({
+		delay: 20,
+		time: 2000,
+	});
+
 	//window scrolling
 	$(window).scroll(function () {
 		var scrolling = $(this).scrollTop();
@@ -126,6 +126,7 @@ $(document).ready(function () {
 			1500
 		);
 	});
+
 	//venobox effect
 	$(".venobox").venobox();
 });
