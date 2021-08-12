@@ -68,6 +68,12 @@ $(document).ready(function () {
 		slidesToScroll: 1,
 		arrows: false,
 	});
+	
+	//counter up area
+	$(".counter").counterUp({
+		delay: 20,
+		time: 2000,
+	});
 
 	//brand slider area
 	$(".brand-slider").slick({
@@ -125,10 +131,5 @@ $(document).ready(function () {
 	//venobox effect
 	$(".venobox").venobox();
 	
-	//counter up area
-	$(".counter").counterUp({
-		delay: 20,
-		time: 2000,
-	});
 	
 });
