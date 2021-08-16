@@ -69,11 +69,6 @@ $(document).ready(function () {
 		arrows: false,
 	});
 	
-	//counter up area
-	$(".counter").counterUp({
-		delay: 20,
-		time: 2000,
-	});
 
 	//brand slider area
 	$(".brand-slider").slick({
@@ -83,6 +78,13 @@ $(document).ready(function () {
 		centerMode: true,
 		centerPadding: "0",
 		autoplay: true,
+	});
+	
+	
+	//counter up area
+	$(".counter").counterUp({
+		delay: 20,
+		time: 2000,
 	});
 
 
